@@ -3,7 +3,9 @@
 modified variant of slide format and styles from: 
 
 Matt Nowack's jQuery presentation:
-http://github.com/ihumanable/stir-trek-2010-jquery-14
+[http://github.com/ihumanable/stir-trek-2010-jquery-14](http://github.com/ihumanable/stir-trek-2010-jquery-14)
+and 
+Google's HTML5 rocks slideshow [http://slides.html5rocks.com/#slide1](http://slides.html5rocks.com/#slide1)
 
 Copyright 2010 Google Inc.
 
