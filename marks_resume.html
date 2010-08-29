@@ -1,0 +1,406 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+        <title>Mark Essel's Resume</title>
+        <link rel="stylesheet" type="text/css" href="main.css" media="screen, projection" />
+        <script type="text/javascript" src="jquery-1.4.2.js"></script>
+        <script type="text/javascript" src="jquery.mousewheel.js"></script>
+        <script type="text/javascript">
+            function show(text, target) {
+                var out = $('#' + target);
+                out.fadeOut();
+                out.hide();
+                out.html(text);
+                out.fadeIn();
+            }
+            function log(msg) {
+                $('#logger').append('<p>'+msg+'</p>').scrollTop(999999);
+            };
+
+        </script>
+    </head>
+    <body>
+        <div class="presentation">
+            <div class="slides">
+                <div class="slide">
+                    <section class="center intro">
+                        <hgroup>
+                            <h1>
+                                Mark Essel's
+                            </h1>
+                        </hgroup>
+                        <h1>Resume</h1>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <p class="quiet">special thanks and credit for the format to <a href="http://ihumanable.com/jquery/presentation.html#slide1">Matt Nowack</a> and <a href="http://slides.html5rocks.com/#slide1">HTML5 rocks slideshow team</a></p>
+                    </section>
+                </div>
+
+                <div class="slide">
+                    <header>
+                        <h1>Tools I love to work with</h1>
+                    </header>
+                    <section>
+                        <div id="2" class="bullets">
+                        <ul>
+                            <li>Languages: Ruby, Javascript, HTML/CSS, (c++, c)
+                                <ul><li>deep experience with c++</li>
+                                    <li>strongly prefer Ruby, Javascript, any web dev</li>
+                                    </ul>
+                            </li>
+                            <li>Frameworks/Libs: Rails, Sinatra,JQuery</li>
+                            <li>Deployment: Heroku, Google App Engine, Opera Unite,localhost (mongrel,glassfish,thin,couchDB)</li>
+                            <li>ORM: ActiveRecord, DataMapper</li>
+                            <li>Databases: sqlite3, mongodb, couchDB, + my own informal binary behemoths (doc based)</li>
+                            <li>Familiar(can read): php, python (little django), c#, node.js/connect/express</li>
+                        </ul>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="slide">
+                    <header>
+                        <h1>My Digital Shadow</h1>
+                    </header>
+                    <section>
+                        <div id="3" class="bullets">
+                        <ul>
+                            <li>first startup: <a href="http://victusmedia.com/">http://victusmedia.com/</a></li>
+                            <li>blog: <a href="http://www.victusspiritus.com/">http://www.victusspiritus.com/</a></li>
+                            <li>github: <a href="http://github.com/victusfate">http://github.com/victusfate</a></li>
+                            <li>thoughts on coding: <a href="http://www.victusspiritus.com/tag/coding/">http://www.victusspiritus.com/tag/coding/</a></li>
+                            <li>ruby: <a href="http://www.victusspiritus.com/tag/ruby/">http://www.victusspiritus.com/tag/ruby/</a></li>
+                            <li>design philosophy (subject to change): <a href="http://www.victusspiritus.com/tag/design/">http://www.victusspiritus.com/tag/design/</a></li>
+                            <li>twitter account: <a href="http://twitter.com/victusfate">http://twitter.com/victusfate</a></li>
+                            <li>google profile: <a href="http://www.google.com/profiles/messel">http://www.google.com/profiles/messel</a></li>
+                            <li>linkedin: <a href="http://www.linkedin.com/in/markessel">http://www.linkedin.com/in/markessel</a></li>
+                            <li>Preferred OS: Ubuntu</li>
+                        </ul>
+                        </div>
+                    </section>
+                </div>
+
+
+                <div class="slide">
+                    <header>
+                        <h1>What I've done before</h1>
+                    </header>
+                    <section>
+                        <div id="4" class="bullets">
+                        <ul>
+                            <li>2D Focal Plane Tracking system design and implementation</li>
+                            <li>Computer Data Analysis/Processing - Linear (Least Squares) & Non-Linear (parameterized)</li>
+                            <li>Detection Algorithms, Infrared Image processing Temporal/Spectral Matched Filter</li>
+                            <li>Clutter Mitigation in stressing environments</li>
+                            <li>Experience with Windows, and Unix operating systems</li>
+                            <li>Discrimination Algorithms: Quadratic Classifier, Convex Hull</li>
+                            <li>Protein Structure Search Analysis</li>
+                            <li>Modeling of Atmospheric Gases, and IR sensor images</li>
+                            <li>Developed Microsoft windows GUI tools to aid visualization</li>
+                            <li>Excel, Xmgr, Saoimage(ds9) and other visualization tools</li>
+                            <li>Visual Basic, Matlab</li>
+                            <li>Fortran, Rational Rose, Java</li>
+                        </ul>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="slide">
+                    <header>
+                        <h1>Professional Experience</h1>
+                    </header>
+                    <section>
+                        <h2>Photon Research Associates, Jan. 1996 - Present</h2>
+                        <h2>Senior Staff Scientist core responsibilities: Algorithm and software development, implementation and testing. Activities include:</h2>
+                        <div id="5" class="bullets">
+                        <ul>
+                            <li>Design and implementation of real time PDB search tool to identify structures similar to specified structures (Kinase)</li>
+                            <li>Design of real time hyperspectral anomaly detection algorithms as well as temperature feature extraction for new LWIR sensor in C++ using Visual .NET and delivered to customer on Linux platform</li>
+                            <li>Implemented and demonstrated Spectral Matched Filter (SMF) algorithm for target detection in a complex target/background scene</li>
+                            <li>Implemented Atmospheric Correction algorithms in C++ and processed AVIRIS data</li>
+                            <li>Developed algorithms for the IR Sensor Study - Algorithm Development Program that demonstrated advanced detection and identification techniques against measured CBD & CBE data sets</li>
+                            <li>Participated in development of Cirrus cloud detection and characterization for HYMSMO program</li>
+                            <li>Developed a mid-course discrimination simulation for SBIRS-Low and performance simulation in order to evaluate the effectiveness of acquisition, tracking, and discrimination in chaff environments</li>
+                            <li>Developed and simulated mid course discrimination algorithms for the Navy Theater Wide COEA (Navy Theater Ballistic Missile Defense)</li>
+                            <li>Developed Monte Carlo simulations of IR sensor(s) and target scenarios over variations in launch, sensor and solar geometry</li>
+                            <li>Simulated SBIRS-High, SBIRS-Low and a number of novel staring/scanning sensor designs and demonstrated performance against Technical Intelligence targets, developed code for integrating targets into backgrounds, incorporated a matched filter into high fidelity simulation and control logic for executables that provide parallel processing</li>
+                        </ul>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="slide">
+                    <header>
+                        <h1>Publications</h1>
+                    </header>
+                    <section>
+                        <div id="6" class="bullets">
+                        <ul>
+                            <li>“Midcourse Clutter Mitigation Using Multi-Spectral, Subspace Projection Techniques”, Julian Brody, Mark Essel, Brad Flanders, Henry Phan, Tony Sommese, MSS, January, 2003
+                            <li>"Atmospheric Correction Using Imbedded Models (ACUIM)", Tony Sommese and Mark Essel, SPIE, March, 2000
+                            <li>"Background Clutter Rejection Using Generalized Regression Neural Networks" , C. Ralph Waters, Tony Sommese, Mark Essel and Capt. Brian Hibbeln, IEEE, March, 2000
+                            <li>"Signal Subspace Processing Of 4D Remote Sensing Data", Ralph Waters, Tony Sommese, Mark Essel, Stephen Mack and Capt. Brian Hibbeln, IEEE, March, 1999
+                            <li>"Super Resolution and Image Enhancement Using Novelty Concepts", C.Ralph Waters, Tony Sommese, Dave Weiss, Mark Essel & Capt. Brian Hibbeln IEEE, March 1998</li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="slide">
+                    <header>
+                        <h1>Contact Information</h1>
+                    </header>
+                    <section>
+                        <div id="7" class="bullets">
+                        <ul>
+                            <li>Mark Essel</li>
+                            <li>8 Colony Rd</li>
+                            <li>Port Jefferson Station, NY 11776</li>
+                            <li>Phone: (631)403-0178 (gvoice+gizmo5)</li>
+                            <li>email: <a href="mailto:messel@gmail.com">messel@gmail.com</a> twitter: <a href="http://twitter.com/victusfate">@victusfate</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div> <!-- end slides div -->
+            <!-- <div id="logger"></div> -->
+        </div> <!-- end presentation div -->
+
+        <script>
+            $(function() {
+                // Since we don't have the fallback of attachEvent and
+                // other IE only stuff we won't try to run JS for IE.
+                // It will run though when using Google Chrome Frame
+                if (document.all) { return; }
+
+                var currentSlideNo;
+                var notesOn = false;
+                var slides = document.getElementsByClassName('slide');
+                var touchStartX = 0;
+
+                // var slide_hash = window.location.hash.replace(/#/, '');
+                // if (slide_hash) {
+                //   for (var i = 0, len = slides.length; i < len; i++) {
+                //     if (slides[i].id == slide_hash) {
+                //       currentSlideNo = i;
+                //       updateSlideClasses();
+                //     }
+                //   }
+                // }
+        
+                var spaces = /\s+/, a1 = [""];
+
+                var str2array = function(s) {
+                    if (typeof s == "string" || s instanceof String) {
+                        if (s.indexOf(" ") < 0) {
+                            a1[0] = s;
+                            return a1;
+                        } else {
+                            return s.split(spaces);
+                        }
+                    }
+                    return s;
+                };
+
+                var trim = function(str) {
+                    return str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+                };
+
+                var addClass = function(node, classStr) {
+                    classStr = str2array(classStr);
+                    var cls = " " + node.className + " ";
+                    for (var i = 0, len = classStr.length, c; i < len; ++i) {
+                        c = classStr[i];
+                        if (c && cls.indexOf(" " + c + " ") < 0) {
+                            cls += c + " ";
+                        }
+                    }
+                    node.className = trim(cls);
+                };
+
+                var removeClass = function(node, classStr) {
+                    var cls;
+                    if (classStr !== undefined) {
+                        classStr = str2array(classStr);
+                        cls = " " + node.className + " ";
+                        for (var i = 0, len = classStr.length; i < len; ++i) {
+                            cls = cls.replace(" " + classStr[i] + " ", " ");
+                        }
+                        cls = trim(cls);
+                    } else {
+                        cls = "";
+                    }
+                    if (node.className != cls) {
+                        node.className = cls;
+                    }
+                };
+
+                var getSlideEl = function(slideNo) {
+                    if (slideNo > 0) {
+                        return slides[slideNo - 1];
+                    } else {
+                        return null;
+                    }
+                };
+
+                var getSlideTitle = function(slideNo) {
+                    var el = getSlideEl(slideNo);
+
+                    if (el) {
+                        return el.getElementsByTagName('header')[0].innerHTML;
+                    } else {
+                        return null;
+                    }
+                };
+        
+                var changeSlideElClass = function(slideNo, className) {
+                    var el = getSlideEl(slideNo);
+
+                    if (el) {
+                        removeClass(el, 'far-past past current future far-future');
+                        addClass(el, className);
+                    }
+                };
+        
+                var updateSlideClasses = function() {
+                    window.location.hash = "slide" + currentSlideNo;
+                    changeSlideElClass(currentSlideNo - 2, 'far-past');
+                    changeSlideElClass(currentSlideNo - 1, 'past');
+                    changeSlideElClass(currentSlideNo, 'current');
+                    changeSlideElClass(currentSlideNo + 1, 'future');
+                    changeSlideElClass(currentSlideNo + 2, 'far-future');
+
+                    // smooth fade in for bullets
+                    var select = '#'+currentSlideNo+ '.bullets li';
+                    var cbullets = $(select);
+                    var cb_out = cbullets.length;
+                    log("cbullets "+cb_out+" current slide "+currentSlideNo);
+                    cbullets.hide();
+                    $(select).each(function(index) {
+                        $(this).delay(index*500).fadeIn(1000);
+                    });
+
+
+                };
+        
+                var nextSlide = function() {
+                    if (currentSlideNo < slides.length) {
+                        currentSlideNo++;
+                    }
+
+                    updateSlideClasses();
+                };
+        
+                var prevSlide = function() {
+                    if (currentSlideNo > 1) {
+                        currentSlideNo--;
+                    }
+                    updateSlideClasses();
+                };
+        
+                var showNotes = function() {
+                    var notes = document.querySelectorAll('.notes');
+                    for (var i = 0, len = notes.length; i < len; i++) {
+                        notes[i].style.display = (notesOn) ? 'none':'block';
+                    }
+                    notesOn = (notesOn) ? false:true;
+                };
+
+                var switch3D = function() {
+                    if (document.body.className.indexOf('three-d') == -1) {
+                        document.getElementsByClassName('presentation')[0].style.webkitPerspective = '1000px';
+                        document.body.className += ' three-d';
+                    } else {
+                        window.setTimeout("document.getElementsByClassName('presentation')[0].style.webkitPerspective = '0';", 2000);
+                        document.body.className = document.body.className.replace(/three-d/, '');
+                    }
+                };
+
+                var handleBodyKeyDown = function(event) {
+                    // console.log(event.keyCode);
+                    switch (event.keyCode) {
+                        case 37: // left arrow
+                            prevSlide();
+                            break;
+                        case 39: // right arrow
+                            // case 32: // space
+                            nextSlide();
+                            break;
+                        case 50: // 2
+                            showNotes();
+                            break;
+                        case 51: // 3
+                            switch3D();
+                            break;
+                    }
+                };
+
+                $('.slide').mousewheel(function(event, delta, deltaX, deltaY) {
+//                    var o = '';
+                    if (delta > 0) {
+//                        o = '#test2: up ('+delta+')';
+                        prevSlide();
+                    }
+                    else if (delta < 0) {
+//                        o = '#test2: down ('+delta+')';
+                        nextSlide();
+                    }
+//                    if( o != '' ) log( o );
+                });
+
+                var addTouchListeners = function() {
+                    document.addEventListener('touchstart', function(e) {
+                        touchStartX = e.touches[0].pageX;
+                    }, false);
+                    document.addEventListener('touchend', function(e) {
+                        var pixelsMoved = touchStartX - e.changedTouches[0].pageX;
+                        var SWIPE_SIZE = 150;
+                        if (pixelsMoved > SWIPE_SIZE) {
+                            nextSlide();
+                        }
+                        else if (pixelsMoved < -SWIPE_SIZE) {
+                            prevSlide();
+                        }
+                    }, false);
+                };
+
+                // initialize
+
+                (function() {
+                    if (window.location.hash != "") {
+                        currentSlideNo = Number(window.location.hash.replace('#slide', ''));
+                    } else {
+                        currentSlideNo = 1;
+                    }
+
+                    document.addEventListener('keydown', handleBodyKeyDown, false);
+                    /*          document.addEventListener('mousewheel',handleWheel, false);
+                      document.addEventListener('DOMMouseScroll',handleWheel, false);
+                      document.addEventListener('mousewheel',
+                          function(e) { handleWheel(e); }, false);
+                      document.addEventListener('DOMMouseScroll',
+                          function(e) { handleWheel(e); }, false); */
+
+
+                    var els = slides;
+                    for (var i = 0, el; el = els[i]; i++) {
+                        addClass(el, 'slide far-future');
+                    }
+                    updateSlideClasses();
+
+                    // add support for finger events (filter it by property detection?)
+                    addTouchListeners();
+                })();
+            })();
+ 
+        </script>
+
+        <!--[if IE]>
+		<script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script> 
+		<script>CFInstall.check({ mode: "overlay" });</script> 
+        <![endif]-->
+    </body>
+</html> 
