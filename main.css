@@ -206,6 +206,15 @@ h2 {
   margin-top: 50px;
 }
 
+h3 {
+  font-family: 'Junction';
+  color: black;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+
 .intro h1,
 .intro h2,
 h1,
@@ -408,10 +417,26 @@ li {
   content: '- ';
 }
 
-info {
+#bottom1 {
+   position: absolute; 
+   bottom: 0px; 
+   width:100%; 
+   text-align: center;
+}
+
+#bottom2 {
+   position: absolute; 
+   bottom: 60px; 
+   width:100%; 
+   text-align: center;
+}
+
+
+.info {
   display: block;
   font-size: 50%;
   text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;      
 }
 
 #logger {

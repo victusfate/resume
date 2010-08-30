@@ -35,9 +35,8 @@
                         <h1>Resume</h1>
                         <br>
                         <br>
-                        <br>
-                        <br>
-                        <p class="quiet">special thanks and credit for the format to <a href="http://ihumanable.com/jquery/presentation.html#slide1">Matt Nowack</a> and <a href="http://slides.html5rocks.com/#slide1">HTML5 rocks slideshow team</a></p>
+	                <div id="bottom2" class="info">Use mouse wheel up/down or left/right arrow keys to navigate</div>
+                        <p id="bottom1" class="quiet">special thanks and credit for the format to <a href="http://ihumanable.com/jquery/presentation.html#slide1">Matt Nowack</a> and <a href="http://slides.html5rocks.com/#slide1">HTML5 rocks slideshow team</a></p>
                     </section>
                 </div>
 
@@ -102,9 +101,7 @@
                             <li>Protein Structure Search Analysis</li>
                             <li>Modeling of Atmospheric Gases, and IR sensor images</li>
                             <li>Developed Microsoft windows GUI tools to aid visualization</li>
-                            <li>Excel, Xmgr, Saoimage(ds9) and other visualization tools</li>
-                            <li>Visual Basic, Matlab</li>
-                            <li>Fortran, Rational Rose, Java</li>
+                            <li>Used Visual Basic (macros), Matlab, Fortran, Rational Rose, Java, Excel, Xmgr, Saoimage(ds9) and other visualization tools</li>
                         </ul>
                         </div>
                     </section>
@@ -136,10 +133,16 @@
 
                 <div class="slide">
                     <header>
-                        <h1>Publications</h1>
+                        <h1>Education & Publications</h1>
                     </header>
                     <section>
                         <div id="6" class="bullets">
+			<h2>Formal Education</h2>
+			<ul>
+			<li>MS, Electrical Engineering, SUNY @ Stony Brook, 1997</li>
+			<li>BS, Physics, SUNY @ Stony Brook, 1995</li>
+			</ul>
+			<h2>Publications</h2>
                         <ul>
                             <li>“Midcourse Clutter Mitigation Using Multi-Spectral, Subspace Projection Techniques”, Julian Brody, Mark Essel, Brad Flanders, Henry Phan, Tony Sommese, MSS, January, 2003
                             <li>"Atmospheric Correction Using Imbedded Models (ACUIM)", Tony Sommese and Mark Essel, SPIE, March, 2000
@@ -280,7 +283,7 @@
                     log("cbullets "+cb_out+" current slide "+currentSlideNo);
                     cbullets.hide();
                     $(select).each(function(index) {
-                        $(this).delay(index*500).fadeIn(1000);
+                        $(this).delay(index*350).fadeIn(1000);
                     });
 
 
