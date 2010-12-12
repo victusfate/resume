@@ -154,13 +154,13 @@ header {
 
   color: #3333FF;
   text-shadow: rgba(0, 0, 0, 0.496094) 0px 5px 5px;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(200, 200, 240, 0.789062)), to(rgba(255, 255, 255, 0.789062)));
+/*  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(200, 200, 240, 0.789062)), to(rgba(255, 255, 255, 0.789062))); */
   background-attachment: initial;
   background-origin: initial;
   background-clip: initial;
   background-color: initial;
   border-radius: 15px;
-  -webkit-box-reflect: below 0px -webkit-gradient(linear, 0% 0%, 0% 100%, from(transparent), to(rgba(255, 255, 255, 0.226562))) 0 0 0 0 stretch stretch;
+/*  -webkit-box-reflect: below 0px -webkit-gradient(linear, 0% 0%, 0% 100%, from(transparent), to(rgba(255, 255, 255, 0.226562))) 0 0 0 0 stretch stretch; */
   background-position: initial initial;
   background-repeat: initial initial;
 }

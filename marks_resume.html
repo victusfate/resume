@@ -78,7 +78,7 @@
                             <li>twitter account: <a href="http://twitter.com/victusfate">http://twitter.com/victusfate</a></li>
                             <li>google profile: <a href="http://www.google.com/profiles/messel">http://www.google.com/profiles/messel</a></li>
                             <li>linkedin: <a href="http://www.linkedin.com/in/markessel">http://www.linkedin.com/in/markessel</a></li>
-                            <li>Preferred OSs: Ubuntu, Mac OS X</li>
+                            <li>Preferred OSes: Mac OS X, Ubuntu</li>
                         </ul>
                         </div>
                     </section>
@@ -170,11 +170,10 @@
                     </section>
                 </div>
             </div> <!-- end slides div -->
-            <!-- <div id="logger"></div> -->
         </div> <!-- end presentation div -->
 
         <script>
-            $(function() {
+            (function() {
                 // Since we don't have the fallback of attachEvent and
                 // other IE only stuff we won't try to run JS for IE.
                 // It will run though when using Google Chrome Frame
@@ -182,6 +181,7 @@
 
                 var currentSlideNo;
                 var notesOn = false;
+//                var slides = $(".slide");
                 var slides = document.getElementsByClassName('slide');
                 var touchStartX = 0;
 
@@ -243,7 +243,7 @@
                 };
 
                 var getSlideEl = function(slideNo) {
-                    if (slideNo > 0) {
+                    if (slideNo > 0) { // apparently don't need -> ( && slideNo < slides.length )
                         return slides[slideNo - 1];
                     } else {
                         return null;
