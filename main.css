@@ -75,12 +75,21 @@ div.slide p {
   font-size: 20px;
 }
 
-div.slide p.quiet {
+div.slide .quiet {
   font-size: 16px;
   color: white;
   text-shadow: black 3px 3px 3px;
   box-shadow: rgba(0, 0, 128, 0.246094) 6px 7px 3px;
 }
+
+div.slide .quiet2 {
+  font-size: 16px;
+  color: white;
+  text-shadow: black 3px 3px 3px;
+  float: left;
+  box-shadow: rgba(0, 0, 128, 0.246094) 6px 7px 3px;
+}
+
 
 section.intro p {
   font-size: 35px;
@@ -135,9 +144,6 @@ body.three-d div.slides {
 
 
 /* Content */
-
-@font-face { font-family: 'Junction'; src: url(src/Junction02.otf); }
-@font-face { font-family: 'LeagueGothic'; src: url(src/LeagueGothic.otf); }
 
 header {
   font-family: 'Junction';
@@ -264,7 +270,7 @@ section.small {
   font-size: 24px;
 }
 
-section.small ul {
+section.small g {
   margin: 0 0 0 15px;
   padding: 0;
 }
@@ -410,7 +416,7 @@ video {
 
 li {
   list-style: none;
-  padding: 10px 0;
+  padding: 8px 0;
 }
 
 .summary li::before, .bullets li::before {
@@ -454,4 +460,100 @@ li {
 	background-color: #FFFFE8;
 }
 
+#front {
+	height: 160px;
+	width: 160px;
+}
 
+/* polaroids image stying from http://www.zurb.com/playground/css3-polaroids */
+div#content h1, div#content h2, div#content h3, div#content h4, div#content h5, div#content h6, div#content p {
+	text-shadow: 0 1px 1px rgba(255,255,255,.5);
+}
+div#content h1, div#content h2, div#content h3, div#content h4, div#content h5, div#content h6 {
+	color: #62412e;
+}
+.polaroid_box {
+	margin:20px 0 0px 25px;
+}
+
+ul.polaroids {
+	width: 95%;
+	margin: 0px 0px 18px 0px;
+	float: left;
+	list-style: none;
+	padding: 20px;
+}
+.polaroids li {
+	display: inline;
+}
+.polaroids a {
+	background: #fff;
+	display: inline;
+	float: left;
+	margin: 0 0 0px 20px;
+	width: auto;
+	padding: 10px 10px 5px;
+	text-align: center;
+	font-family: "Marker Felt", sans-serif;
+	text-decoration: none;
+	color: #333;
+	font-size: 16px;
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-webkit-transform: rotate(-2deg);
+	-webkit-transition: -webkit-transform .15s linear;
+	-moz-transform: rotate(-2deg);
+}
+.polaroids img {
+	display: block;
+	height: 160px;
+	width: 160px;
+	margin-bottom: 12px;
+}
+.polaroids img.small {
+	height: 100px;
+	width: 100px;
+}
+
+
+
+.polaroids a:after {
+	content: attr(title);
+}
+
+.polaroids li:nth-child(even) a {
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+}
+.polaroids li:nth-child(3n) a {
+	-webkit-transform: none;
+	position: relative;
+	top: -5px;
+	-moz-transform: none;
+}
+.polaroids li:nth-child(5n) a {
+	-webkit-transform: rotate(5deg);
+	position: relative;
+	right: 5px;
+	-moz-transform: rotate(5deg);
+}
+.polaroids li:nth-child(8n) a {
+	position: relative;
+	right: 5px;
+	top: 8px;
+}
+.polaroids li:nth-child(11n) a {
+	position: relative;
+	left: -5px;
+	top: 3px;
+}
+
+.polaroids li a:hover,
+.polaroids .front a:hover {
+	-webkit-transform: scale(1.25);
+	-moz-transform: scale(1.25);
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+	position: relative;
+	z-index: 5;
+}

@@ -6,7 +6,7 @@
 
         <title>Mark Essel's Resume</title>
         <link rel="stylesheet" type="text/css" href="main.css" media="screen, projection" />
-        <script type="text/javascript" src="jquery-1.4.2.js"></script>
+		<script type="text/javascript" src="jquery-1.5.1.min.js"></script>
         <script type="text/javascript" src="jquery.mousewheel.js"></script>
         <script type="text/javascript">
             function show(text, target) {
@@ -48,15 +48,24 @@
                         <div id="2" class="bullets">
                         <ul>
                             <li>Languages: Ruby, Javascript, HTML/CSS, (c++, c)
-                                <ul><li>deep experience with c++</li>
+                                <ul>
+									<li>deep experience with c++</li>
                                     <li>strongly prefer Ruby, Javascript, any web dev</li>
-                                    </ul>
+                                </ul>
                             </li>
                             <li>Frameworks/Libs: Rails, Sinatra,JQuery</li>
                             <li>Deployment: Heroku, Google App Engine, localhost (mongrel, glassfish, thin, couchDB)</li>
-                            <li>ORM: ActiveRecord, DataMapper</li>
-                            <li>Databases: SQL variants, mongodb, couchDB, + my own informal binary behemoths (doc based)</li>
+                            <li>ORM: ActiveRecord, DataMapper .find_by_name(name) or .first(:name => name)</li>
+                            <li>Databases: SQL variants, mongodb, couchDB, + home brewed binary behemoths (doc based)</li>
                             <li>Familiar: php, python (little django), c#, node.js/connect/express</li>
+
+							<li>Preferred Operating Systems:
+								<ul class="polaroids">
+									<div class="front"><a href="http://www.apple.com/macosx/"><img class="small" src="images/mac_os_x.png" title="Mac OS X" />Mac OS X</a></div>
+									<div class="front"><a href="http://www.ubuntu.com/"><img class="small" src="images/ubuntu.jpeg" title="Ubuntu" />Ubuntu</a></div>
+								</ul>		
+							</li>
+							
                         </ul>
                         </div>
                     </section>
@@ -67,20 +76,37 @@
                         <h1>My Digital Shadow</h1>
                     </header>
                     <section>
+						<div id="3" class="polaroid_box">
+							<ul class="polaroids">
+								<li><div class="front"><a href="http://victusmedia.com/"><img src="images/victus_media.png" title="Victus Media"/>Victus Media first startup</a></div></li>
+								<li><div class="front"><a href="http://github.com/victusfate"><img src="images/github.png" title="victusfate github"/>my github home</a></div></li>
+								<li><div class="front"><a href="http://www.victusspiritus.com/"><img src="images/victus_spiritus.png" title="Victus Spiritus, my blog" />Victus Spiritus, my blog</a></div></li>
+								<li>
+		                            <div class="quiet2"><a href="http://www.victusspiritus.com/tag/coding/">thoughts on coding</a></div><br/>
+		                            <div class="quiet2"><a href="http://www.victusspiritus.com/tag/ruby/">ruby</a></div><br/>
+		                            <div class="quiet2"><a href="http://www.victusspiritus.com/tag/design/">design philosophy</a></div><br/>
+								</li>
+							</ul>
+							<ul class="polaroids">
+								<li><div class="front"><a href="http://twitter.com/victusfate"><img src="images/twitter.png" title="Twitter profile" />Twitter</a></div></li>
+								<li><div class="front"><a href="http://www.google.com/profiles/messel"><img src="images/google_profile.png" title="Google profile" />Google profile</a></div></li>
+								<li><div class="front"><a href="http://www.linkedin.com/in/markessel"><img src="images/linked_in.png" title="LinkedIn profile" />LinkedIn</a></div></li>
+							</ul>
+						</div>
+						<div class="quiet">image polaroids css via <a href="http://www.zurb.com/playground/css3-polaroids">zurb.com</a></div>
+<!--						
                         <div id="3" class="bullets">
                         <ul>
                             <li>first startup: <a href="http://victusmedia.com/">http://victusmedia.com/</a></li>
                             <li>blog: <a href="http://www.victusspiritus.com/">http://www.victusspiritus.com/</a></li>
                             <li>github: <a href="http://github.com/victusfate">http://github.com/victusfate</a></li>
-                            <li>thoughts on coding: <a href="http://www.victusspiritus.com/tag/coding/">http://www.victusspiritus.com/tag/coding/</a></li>
-                            <li>ruby: <a href="http://www.victusspiritus.com/tag/ruby/">http://www.victusspiritus.com/tag/ruby/</a></li>
-                            <li>design philosophy (subject to change): <a href="http://www.victusspiritus.com/tag/design/">http://www.victusspiritus.com/tag/design/</a></li>
                             <li>twitter account: <a href="http://twitter.com/victusfate">http://twitter.com/victusfate</a></li>
                             <li>google profile: <a href="http://www.google.com/profiles/messel">http://www.google.com/profiles/messel</a></li>
                             <li>linkedin: <a href="http://www.linkedin.com/in/markessel">http://www.linkedin.com/in/markessel</a></li>
                             <li>Preferred OSes: Mac OS X, Ubuntu</li>
                         </ul>
                         </div>
+-->
                     </section>
                 </div>
 
@@ -170,7 +196,7 @@
                         <h1>Contact Information</h1>
                     </header>
                     <section>
-						<img class="aligncenter wp-image-4217" style="position:absolute; right:100px;" title="MichelleAndMeJustMarried" src="MichelleAndMeJustMarried.jpeg" alt="" width="200" height="150"> 
+						<img style="position:absolute; right:100px;" title="MichelleAndMeJustMarried" src="images/MichelleAndMeJustMarried.jpeg" alt="" width="200" height="150" />
                         <div id="7" class="bullets">
 	                        <ul>
 	                            <li>Mark Essel</li>
@@ -299,6 +325,17 @@
                     $(select).each(function(index) {
                         $(this).delay(index*350).fadeIn(1000);
                     });
+
+                    // smooth fade in for ibullets
+                    var select = '#'+currentSlideNo+ '.ibullets li';
+                    var cbullets = $(select);
+                    var cb_out = cbullets.length;
+                    log("cbullets "+cb_out+" current slide "+currentSlideNo);
+                    cbullets.hide();
+                    $(select).each(function(index) {
+                        $(this).delay(index*350).fadeIn(1000);
+                    });
+
 
 
                 };
