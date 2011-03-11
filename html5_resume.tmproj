@@ -26,28 +26,28 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>131</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>77</integer>
+				<integer>5</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>35</integer>
+			<integer>0</integer>
 		</dict>
 		<key>main.css</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>10</integer>
+				<integer>1</integer>
 				<key>line</key>
-				<integer>477</integer>
+				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>442</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
@@ -58,6 +58,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{228, 97}, {1154, 1291}}</string>
+	<string>{{297, 61}, {979, 817}}</string>
 </dict>
 </plist>
