@@ -8,7 +8,7 @@ Much prettier version of this resume:
 http://victusfate.github.com/html5-resume
 
 STUFF I LOVE TO WORK WITH: 
-Languages: Ruby, Javascript, HTML/CSS,C++, C (stronger c/c++, prefer Ruby/web dev) 
+Languages: CoffeeScript, Javascript, Ruby, HTML/CSS,C++, C 
 Frameworks: Rails, Sinatra 
 Deployment: localhost (mongrel, thin), Heroku, Google App Engine 
 ORM: ActiveRecord, DataMapper 
