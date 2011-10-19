@@ -13,7 +13,7 @@ Frameworks: Rails, Sinatra
 Deployment: localhost (mongrel, thin), Heroku, Google App Engine 
 ORM: ActiveRecord, DataMapper 
 Databases: sqlite3, mongodb, postgres, my own informal binary behemoths 
-Familiarities: php, python (little django), c#, node.js
+Familiarities: php, python, c#, node.js
 FAVORITE OSes: Mac OS X, Ubuntu
 
 MY DIGITAL SHADOW: 
@@ -27,7 +27,7 @@ linkedin: http://www.linkedin.com/in/markessel
 
 
 WORK I'VE DONE BEFORE: 
-2D Focal Plane Tracking system design and implementation 
+2D/3D Focal Plane Tracking system design and implementation 
 Computer Data Analysis/Processing - Linear (Least Squares) & Non-Linear (parameterized)
 Detection Algorithms, Infrared Image processing Temporal/Spectral Matched Filter
 Clutter Mitigation in stressing environments
