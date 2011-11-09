@@ -28,15 +28,14 @@ linkedin: http://www.linkedin.com/in/markessel
 
 WORK I'VE DONE BEFORE: 
 2D/3D Focal Plane Tracking system design and implementation 
-Computer Data Analysis/Processing - Linear (Least Squares) & Non-Linear (parameterized)
+Signal Analysis/Processing - Linear (Least Squares) & Non-Linear (parameterized)
 Detection Algorithms, Infrared Image processing Temporal/Spectral Matched Filter
 Clutter Mitigation in stressing environments
 Experience with Windows, and Unix operating systems
 Discrimination Algorithms: Quadratic Classifier, Convex Hull
 Protein Structure Search Analysis
 Modeling of Atmospheric Gases, and IR sensor images
-Developed Microsoft windows GUI tools to aid visualization
-Used Visual Basic (macros), Matlab, Fortran, Rational Rose, Java, Excel, Xmgr, Saoimage(ds9) and other visualization tools
+Developed GUI tools to aid visualization
 
 PROFESSIONAL EXPERIENCE
 Photon Research Associates, Jan. 1996 - Present
@@ -47,7 +46,7 @@ Implemented and demonstrated Spectral Matched Filter (SMF) algorithm for target 
 Implemented Atmospheric Correction algorithms in C++ and processed AVIRIS data
 Developed algorithms for the IR Sensor Study - Algorithm Development Program that demonstrated advanced detection and identification techniques against measured CBD & CBE data sets
 Participated in development of Cirrus cloud detection and characterization for HYMSMO program
-Developed a mid-course discrimination simulation for SBIRS-Low and performance simulation in order to evaluate the effectiveness of acquisition, tracking, and discrimination in chaff environments
+Developed a mid-course discrimination simulation for SBIRS-Low and performance simulation in order to evaluate the effectiveness of acquisition, tracking, and discrimination in clutter environments
 Developed and simulated mid course discrimination algorithms for the Navy Theater Wide COEA (Navy Theater Ballistic Missile Defense)
 Developed Monte Carlo simulations of IR sensor(s) and target scenarios over variations in launch, sensor and solar geometry
 Simulated SBIRS-High, SBIRS-Low and a number of novel staring/scanning sensor designs and demonstrated performance against Technical Intelligence targets, developed code for integrating targets into backgrounds, incorporated a matched filter into high fidelity simulation and control logic for executables that provide parallel processing
@@ -59,7 +58,7 @@ MS, Electrical Engineering, SUNY @ Stony Brook, 1997
 BS, Physics, SUNY @ Stony Brook, 1995
 
 Publications
-“Midcourse Clutter Mitigation Using Multi-Spectral, Subspace Projection Techniques”, Julian Brody, Mark Essel, Brad Flanders, Henry Phan, Tony Sommese, MSS, January, 2003
+"Midcourse Clutter Mitigation Using Multi-Spectral, Subspace Projection Techniques", Julian Brody, Mark Essel, Brad Flanders, Henry Phan, Tony Sommese, MSS, January, 2003
 "Atmospheric Correction Using Imbedded Models (ACUIM)", Tony Sommese and Mark Essel, SPIE, March, 2000
 "Background Clutter Rejection Using Generalized Regression Neural Networks" , C. Ralph Waters, Tony Sommese, Mark Essel and Capt. Brian Hibbeln, IEEE, March, 2000
 "Signal Subspace Processing Of 4D Remote Sensing Data", Ralph Waters, Tony Sommese, Mark Essel, Stephen Mack and Capt. Brian Hibbeln, IEEE, March, 1999
