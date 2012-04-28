@@ -8,11 +8,11 @@ Much prettier version of this resume:
 http://victusfate.github.com/html5-resume
 
 STUFF I LOVE TO WORK WITH: 
+
 Languages: CoffeeScript, Javascript, Ruby, HTML/CSS,C++, C 
-Frameworks: Rails, Sinatra 
+Frameworks: Rails, Sinatra, Django 
 Deployment: localhost (mongrel, thin), Heroku, Google App Engine 
-ORM: ActiveRecord, DataMapper 
-Databases: sqlite3, mongodb, postgres, my own informal binary behemoths 
+Databases: sqlite3, mysql, mongodb, postgres, my own informal binary behemoths 
 Familiarities: php, python, c#, node.js
 FAVORITE OSes: Mac OS X, Ubuntu
 
@@ -27,6 +27,8 @@ linkedin: http://www.linkedin.com/in/markessel
 
 
 WORK I'VE DONE BEFORE: 
+
+Full stack web development Ruby, Python, Javascript, CoffeeScript
 2D/3D Focal Plane Tracking system design and implementation 
 Signal Analysis/Processing - Linear (Least Squares) & Non-Linear (parameterized)
 Detection Algorithms, Infrared Image processing Temporal/Spectral Matched Filter
@@ -38,7 +40,17 @@ Modeling of Atmospheric Gases, and IR sensor images
 Developed GUI tools to aid visualization
 
 PROFESSIONAL EXPERIENCE
-Photon Research Associates, Jan. 1996 - Present
+
+Fast Society, April 2012 - present
+Chief of Research and Development: Algorithm and software development to support video processing toolchain. 
+Here's what I'll be working on:
+Optimize backend video processing architecture (tools, dataflow, encoding)
+Port JavaScript animations to C++ (node modules)
+Constructing new animations/effects
+Configuring and Deploying Amazon's cloud servers
+Everything else a startup requires
+
+Photon Research Associates, Jan. 1996 - April 2012
 Senior Staff Scientist core responsibilities: Algorithm and software development, implementation and testing. Activities include:
 Design and implementation of real time PDB search tool to identify structures similar to specified structures (Kinase)
 Design of real time hyperspectral anomaly detection algorithms as well as temperature feature extraction for new LWIR sensor in C++ using Visual .NET and delivered to customer on Linux platform
