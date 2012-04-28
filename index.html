@@ -1,13 +1,12 @@
-<!DOCTYPE html> 
-<html> 
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!--        <meta http-equiv="X-UA-Compatible" content="chrome=1"> -->
-
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
         <title>Mark Essel's Resume</title>
-        <link rel="stylesheet" type="text/css" href="main.css" media="screen, projection" />
-		<script type="text/javascript" src="jquery-1.5.1.min.js"></script>
-        <script type="text/javascript" src="jquery.mousewheel.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/main.css" media="screen, projection" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
         <script type="text/javascript">
             function show(text, target) {
                 var out = $('#' + target);
@@ -21,38 +20,58 @@
             };
 
         </script>
-    </head>
-    <body>	
-        <div class="presentation">
-            <div class="slides">
-                <div class="slide">
-                    <section class="center intro">
-						<a href="https://github.com/victusfate/html5-resume">
-							<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
-						</a>
-                        <hgroup>
-                            <h1>
-                                Mark Essel's
-                            </h1>
-                        </hgroup>
-                        <h1>Resume</h1>
-                        <br>
-                        <br>
-	                <div id="bottom2" class="info">Use mouse wheel up/down or left/right arrow keys to navigate</div>
-                        <p id="bottom1" class="quiet">special thanks and credit for the format to <a href="http://ihumanable.com/jquery/presentation.html/">Matt Nowack</a> and <a href="http://slides.html5rocks.com/">HTML5 rocks slideshow team</a></p>
-                    </section>
-                </div>
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
 
-                <div class="slide">
+		<link rel="stylesheet" href="lib/zenburn.css">
+	</head>
+	
+	<body>
+		
+		<div id="reveal">
+
+			<!-- Used to fade in a background when a specific slide state is reached -->
+			<div class="state-background"></div>
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div id="ribbon">
+		        <a href="https://github.com/victusfate/html5-resume">
+				    <img style="z-index:15; position: absolute; top: 0; right: 0; border: 0;margin: 0 0 0 0;background: none; -webkit-box-shadow: none; box-shadow: none;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
+			    </a>
+				<script>
+				    $("#ribbon").fadeOut(5000);
+		        </script>			    
+			</div>
+		    <canvas></canvas>
+			<div class="slides">
+    		    
+				<section>
+                    <h1>Mark Essel's</h1>
+                    <h1>Resume</h1>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <p><small>special thanks and format credit <a href="http://hakim.se/">Hakim El Hattab</a>/<a href="http://twitter.com/hakimel">@hakimel</a>, <a href="http://prez.mahemoff.com/state-native/#/">Michael Mahemoff</a> for showing it off, and <a href="https://plus.google.com/u/0/116059998563577101552/posts">Paul Kinlan</a> for plusing it</small></p>
+					<script>
+						// Delicously hacky. Look away.
+						if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) )
+						document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
+					</script>
+				</section>
+				
+				<section>
                     <header>
                         <h1>Tools I love to work with</h1>
                     </header>
-                    <section>
-                        <div id="2" class="bullets">
+                    <div id="2" class="bullets">
                         <ul>
                             <li>Languages: CoffeeScript, Javascript, Ruby, HTML/CSS, c++, c 
                                 <ul>
-					<li>deeper experience with c++, prefer dynamic languages</li>
+                                    <li>deeper experience with c++, prefer dynamic languages</li>
                                 </ul>
                             </li>
                             <li>Frameworks/Libs: Rails, Sinatra, jQuery, too many to list</li>
@@ -61,18 +80,18 @@
                             <li>ORM: ActiveRecord, DataMapper .find_by_name(name) or .first(:name => name)</li>
                             <li>Familiar: php, python, c#, node.js</li>
                             <li>Preferred Operating Systems:
-                            	<ul class="polaroids">
-                            		<div class="front"><a href="http://www.apple.com/macosx/"><img class="small" src="images/mac_os_x.png" title="Mac OS X" />Mac OS X</a></div>
-					<div class="front"><a href="http://www.ubuntu.com/"><img class="small" src="images/ubuntu.jpeg" title="Ubuntu" />Ubuntu</a></div>
-			    	</ul>		
-			    </li>
-							
-                        </ul>
-                        </div>
-                    </section>
-                </div>
+                                <ul class="polaroids">
+                                    <div class="front"><a href="http://www.apple.com/macosx/"><img class="small" src="images/mac_os_x.png" title="Mac OS X" />Mac OS X</a></div>
+                                    <div class="front"><a href="http://www.ubuntu.com/"><img class="small" src="images/ubuntu.jpeg" title="Ubuntu" />Ubuntu</a></div>
+                                </ul>
+                            </li>
 
-                <div class="slide">
+                        </ul>
+                    </div>
+				</section>
+				
+				<!-- Example of nested vertical slides -->
+				<section>
                     <header>
                         <h1>My Digital Shadow</h1>
                     </header>
@@ -83,9 +102,9 @@
 								<li><div class="front"><a href="http://github.com/victusfate"><img src="images/github.png" title="victusfate github"/>my github home</a></div></li>
 								<li><div class="front"><a href="http://www.victusspiritus.com/"><img src="images/victus_spiritus.png" title="Victus Spiritus, my blog" />Victus Spiritus, my blog</a></div></li>
 								<li>
-		                            <div class="quiet2"><a href="http://www.victusspiritus.com/tag/coding/">thoughts on coding</a></div><br/>
-		                            <div class="quiet2"><a href="http://www.victusspiritus.com/tag/coffeescript/">coffeescript</a></div><br/>
-		                            <div class="quiet2"><a href="http://www.victusspiritus.com/tag/design/">design philosophy</a></div><br/>
+		                            <a href="http://www.victusspiritus.com/tag/coding/">thoughts on coding</a><br/>
+		                            <a href="http://www.victusspiritus.com/tag/coffeescript/">coffeescript</a><br/>
+		                            <a href="http://www.victusspiritus.com/tag/design/">design philosophy</a><br/>
 								</li>
 							</ul>
 							<ul class="polaroids">
@@ -94,96 +113,114 @@
 								<li><div class="front"><a href="http://www.linkedin.com/in/markessel"><img src="images/linked_in.png" title="LinkedIn profile" />LinkedIn</a></div></li>
 							</ul>
 						</div>
-						<div class="quiet">image polaroids css via <a href="http://www.zurb.com/playground/css3-polaroids">zurb.com</a></div>
                     </section>
-                </div>
+				</section>
 
-
-                <div class="slide">
+				<section>
                     <header>
                         <h1>What I've done before</h1>
                     </header>
-                    <section>
-                        <div id="4" class="bullets">
-                        <ul>
-                            <li>2D/3D Focal Plane Tracking system design and implementation</li>
-                            <li>Signal Analysis/Processing - Linear (Least Squares) & Non-Linear (parameterized)</li>
-                            <li>Detection Algorithms, Infrared Image processing Temporal/Spectral Matched Filter</li>
-                            <li>Clutter Mitigation in stressing environments</li>
-                            <li>Experience with Windows, and Unix operating systems</li>
-                            <li>Discrimination Algorithms: Quadratic Classifier, Convex Hull</li>
-                            <li>Protein Structure Search Analysis</li>
-                            <li>Modeling of Atmospheric Gases, and IR sensor images</li>
-                            <li>Developed GUI tools to aid visualization</li>
-                        </ul>
-                        </div>
-                    </section>
-                </div>
+                    <div id="4" class="bullets">
+                    <ul>
+                        <li>Full stack web development Ruby, Python, Javascript, CoffeeScript</li>
+                        <li>2D/3D Focal Plane Tracking system design and implementation</li>
+                        <li>Signal Analysis/Processing - Linear (Least Squares) & Non-Linear (parameterized)</li>
+                        <li>Detection Algorithms, Infrared Image processing Temporal/Spectral Matched Filter</li>
+                        <li>Clutter Mitigation in stressing environments</li>
+                        <li>Experience with Windows, and Unix operating systems</li>
+                        <li>Discrimination Algorithms: Quadratic Classifier, Convex Hull</li>
+                        <li>Protein Structure Search Analysis</li>
+                        <li>Modeling of Atmospheric Gases, and IR sensor images</li>
+                        <li>Developed GUI tools to aid visualization</li>
+                    </ul>
+                    </div>
+                </section>
 
-                <div class="slide">
+                <section>
                     <header>
                         <h1>Professional Experience</h1>
                     </header>
                     <section>
-                        <h2>Photon Research Associates, Jan. 1996 - Present</h2>
-                        <h2>Senior Staff Scientist core responsibilities: Algorithm and software development, implementation and testing. Activities include:</h2>
+                        <br>
+                        <h3>Fast Society, April 2012 - present</h3>
+                        <p>Chief of Research and Development: Algorithm and software development to support video processing toolchain. 
+                            Here's what I'll be working on:</p>
                         <div id="5" class="bullets">
+                 	       <ul>
+	                            <li>Optimize backend video processing architecture (tools, dataflow, encoding)</li>
+	                            <li>Port JavaScript animations to C++ (node modules)</li>
+	                            <li>Constructing new animations/effects</li>
+	                            <li>Configuring and Deploying Amazon's cloud servers</li>
+	                            <li>Everything else a startup requires</li>
+	                        </ul>
+                        </div>
+                    </section>
+                    <section>
+                        <h3>Photon Research Associates, Jan. 1996 - April 2012</h3>
+                        <p>Senior Staff Scientist core responsibilities: Algorithm and software development, implementation and testing.</p>
+                        <div id="6" class="bullets">
                  	       <ul>
 	                            <li>Design and implementation of real time PDB search tool to identify structures similar to specified structures (Kinase)</li>
 	                            <li>Design of real time hyperspectral anomaly detection algorithms as well as temperature feature extraction for new LWIR sensor in C++ using Visual .NET and delivered to customer on Linux platform</li>
 	                            <li>Implemented and demonstrated Spectral Matched Filter (SMF) algorithm for target detection in a complex target/background scene</li>
 	                            <li>Implemented Atmospheric Correction algorithms in C++ and processed AVIRIS data</li>
-	                            <li>Developed algorithms for the IR Sensor Study - Algorithm Development Program that demonstrated advanced detection and identification techniques against measured CBD & CBE data sets</li>
+	                        </ul>
+                        </div>
+                    </section>
+                    <section>
+                        <p>Photon Research Associates, Jan. 1996 - April 2012</p>
+                        <div id="7" class="bullets">
+                 	       <ul>
+	                            <li>Developed algorithms for the IR Sensor Study - Algorithm Development Program that demonstrated advanced detection and identification techniques against measured CBD and CBE data sets</li>
 	                            <li>Participated in development of Cirrus cloud detection and characterization for HYMSMO program</li>
 	                            <li>Developed a mid-course discrimination simulation for SBIRS-Low and performance simulation in order to evaluate the effectiveness of acquisition, tracking, and discrimination in clutter environments</li>
+	                        </ul>
+                        </div>
+                    </section>
+                    <section>
+                        <p>Photon Research Associates, Jan. 1996 - April 2012</p>
+                        <div id="8" class="bullets">
+                 	       <ul>
 	                            <li>Developed and simulated mid course discrimination algorithms for the Navy Theater Wide COEA (Navy Theater Ballistic Missile Defense)</li>
 	                            <li>Developed Monte Carlo simulations of IR sensor(s) and target scenarios over variations in launch, sensor and solar geometry</li>
 	                            <li>Simulated SBIRS-High, SBIRS-Low and a number of novel staring/scanning sensor designs and demonstrated performance against Technical Intelligence targets, developed code for integrating targets into backgrounds, incorporated a matched filter into high fidelity simulation and control logic for executables that provide parallel processing</li>
 	                        </ul>
                         </div>
                     </section>
-                </div>
+                    
+				</section>
 
-                <div class="slide">
+				<section>
                     <header>
                         <h1>Education &amp; Publications</h1>
                     </header>
                     <section>
-						<div id="6" class="bullets">
-							<h2>
-								Formal Education
-							</h2>
-							<ul>
-								<li>MS, Electrical Engineering, SUNY @ Stony Brook, 1997
-								</li>
-								<li>BS, Physics, SUNY @ Stony Brook, 1995
-								</li>
-							</ul>
-							<h2>
-								Publications
-							</h2>
-							<ul>
-								<li>"Midcourse Clutter Mitigation Using Multi-Spectral, Subspace Projection Techniques", Julian Brody, Mark Essel, Brad Flanders, Henry Phan, Tony Sommese, MSS, January, 2003
-								</li>
-								<li>"Atmospheric Correction Using Imbedded Models (ACUIM)", Tony Sommese and Mark Essel, SPIE, March, 2000
-								</li>
-								<li>"Background Clutter Rejection Using Generalized Regression Neural Networks" , C. Ralph Waters, Tony Sommese, Mark Essel and Capt. Brian Hibbeln, IEEE, March, 2000
-								</li>
-								<li>"Signal Subspace Processing Of 4D Remote Sensing Data", Ralph Waters, Tony Sommese, Mark Essel, Stephen Mack and Capt. Brian Hibbeln, IEEE, March, 1999
-								</li>
-								<li>"Super Resolution and Image Enhancement Using Novelty Concepts", C.Ralph Waters, Tony Sommese, Dave Weiss, Mark Essel &amp; Capt. Brian Hibbeln IEEE, March 1998
-								</li>
-							</ul>
-						</div>
+						<h2>Formal Education</h2>
+						<ul>
+							<li>MS, Electrical Engineering, SUNY @ Stony Brook, 1997
+							</li>
+							<li>BS, Physics, SUNY @ Stony Brook, 1995
+							</li>
+						</ul>
+					</section>
+					<section>	
+						<h2>Publications</h2>
+						<ul>
+							<li>"Midcourse Clutter Mitigation Using Multi-Spectral, Subspace Projection Techniques", Julian Brody, Mark Essel, Brad Flanders, Henry Phan, Tony Sommese, MSS, January, 2003</li>
+							<li>"Atmospheric Correction Using Imbedded Models (ACUIM)", Tony Sommese and Mark Essel, SPIE, March, 2000</li>
+							<li>"Background Clutter Rejection Using Generalized Regression Neural Networks" , C. Ralph Waters, Tony Sommese, Mark Essel and Capt. Brian Hibbeln, IEEE, March, 2000</li>
+							<li>"Signal Subspace Processing Of 4D Remote Sensing Data", Ralph Waters, Tony Sommese, Mark Essel, Stephen Mack and Capt. Brian Hibbeln, IEEE, March, 1999</li>
+							<li>"Super Resolution and Image Enhancement Using Novelty Concepts", C.Ralph Waters, Tony Sommese, Dave Weiss, Mark Essel &amp; Capt. Brian Hibbeln IEEE, March 1998</li>
+						</ul>
 					</section>	
-				</div>
+				</section>
 
-                <div class="slide">
+				<section>
                     <header>
                         <h1>Contact Information</h1>
                     </header>
                     <section>
-						<img style="position:absolute; right:100px;" title="MichelleAndMeJustMarried" src="images/MichelleAndMeJustMarried.jpeg" alt="" width="200" height="150" />
+						<img style="position:absolute; right:60px;" title="MichelleAndMeJustMarried" src="images/MichelleAndMeJustMarried.jpeg" alt="" width="200" height="150" />
                         <div id="7" class="bullets">
 	                        <ul>
 	                            <li>Mark Essel</li>
@@ -195,254 +232,66 @@
 	                        </ul>
 						</div>
                     </section>
-                </div>
-            </div> <!-- end slides div -->
-        </div> <!-- end presentation div -->
+				</section>
+			</div>
 
-        <script>
-            (function() {
-                // Since we don't have the fallback of attachEvent and
-                // other IE only stuff we won't try to run JS for IE.
-                // It will run though when using Google Chrome Frame
-                if (document.all) { return; }
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
 
-                var currentSlideNo;
-                var notesOn = false;
-//                var slides = $(".slide");
-                var slides = document.getElementsByClassName('slide');
-                var touchStartX = 0;
+			<!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+		
+		<script src="js/reveal.js"></script>
+		<script type='text/javascript' src="http://jashkenas.github.com/coffee-script/extras/coffee-script.js"></script>  
+		<script>
+			!window.CoffeeScript && document.write('<script src="js/coffee-script.js"><\/script>');
+		</script>
+		<script type='text/coffeescript' src="js/canvas_bkg.coffee"></script> 
+		
 
-                // var slide_hash = window.location.hash.replace(/#/, '');
-                // if (slide_hash) {
-                //   for (var i = 0, len = slides.length; i < len; i++) {
-                //     if (slides[i].id == slide_hash) {
-                //       currentSlideNo = i;
-                //       updateSlideClasses();
-                //     }
-                //   }
-                // }
-        
-                var spaces = /\s+/, a1 = [""];
+		<!-- Optional libraries for code syntax highlighting and classList support in IE9 -->
+		<script src="lib/highlight.js"></script>
+		<script src="lib/classList.js"></script>
+		
+		<script>
+			// Parse the query string into a key/value object
+			var query = {};
+			location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+				query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+			} );
 
-                var str2array = function(s) {
-                    if (typeof s == "string" || s instanceof String) {
-                        if (s.indexOf(" ") < 0) {
-                            a1[0] = s;
-                            return a1;
-                        } else {
-                            return s.split(spaces);
-                        }
-                    }
-                    return s;
-                };
+			Reveal.initialize({
+				// Display controls in the bottom right corner
+				controls: true,
 
-                var trim = function(str) {
-                    return str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
-                };
+				// Display a presentation progress bar
+				progress: true,
 
-                var addClass = function(node, classStr) {
-                    classStr = str2array(classStr);
-                    var cls = " " + node.className + " ";
-                    for (var i = 0, len = classStr.length, c; i < len; ++i) {
-                        c = classStr[i];
-                        if (c && cls.indexOf(" " + c + " ") < 0) {
-                            cls += c + " ";
-                        }
-                    }
-                    node.className = trim(cls);
-                };
+				// If true; each slide will be pushed to the browser history
+				history: true,
 
-                var removeClass = function(node, classStr) {
-                    var cls;
-                    if (classStr !== undefined) {
-                        classStr = str2array(classStr);
-                        cls = " " + node.className + " ";
-                        for (var i = 0, len = classStr.length; i < len; ++i) {
-                            cls = cls.replace(" " + classStr[i] + " ", " ");
-                        }
-                        cls = trim(cls);
-                    } else {
-                        cls = "";
-                    }
-                    if (node.className != cls) {
-                        node.className = cls;
-                    }
-                };
+				// Flags if mouse wheel navigation should be enabled
+				mouseWheel: true,
 
-                var getSlideEl = function(slideNo) {
-                    if (slideNo > 0) { // apparently don't need -> ( && slideNo < slides.length )
-                        return slides[slideNo - 1];
-                    } else {
-                        return null;
-                    }
-                };
+				// Apply a 3D roll to links on hover
+				rollingLinks: true,
 
-                var getSlideTitle = function(slideNo) {
-                    var el = getSlideEl(slideNo);
+				// UI style
+				theme: query.theme || 'default', // default/neon
 
-                    if (el) {
-                        return el.getElementsByTagName('header')[0].innerHTML;
-                    } else {
-                        return null;
-                    }
-                };
-        
-                var changeSlideElClass = function(slideNo, className) {
-                    var el = getSlideEl(slideNo);
+				// Transition style
+				transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
+			});
 
-                    if (el) {
-                        removeClass(el, 'far-past past current future far-future');
-                        addClass(el, className);
-                    }
-                };
-        
-                var updateSlideClasses = function() {
-                    window.location.hash = "slide" + currentSlideNo;
-                    changeSlideElClass(currentSlideNo - 2, 'far-past');
-                    changeSlideElClass(currentSlideNo - 1, 'past');
-                    changeSlideElClass(currentSlideNo, 'current');
-                    changeSlideElClass(currentSlideNo + 1, 'future');
-                    changeSlideElClass(currentSlideNo + 2, 'far-future');
+			hljs.initHighlightingOnLoad();
+		</script>
 
-                    // smooth fade in for bullets
-                    var select = '#'+currentSlideNo+ '.bullets li';
-                    var cbullets = $(select);
-                    var cb_out = cbullets.length;
-                    log("cbullets "+cb_out+" current slide "+currentSlideNo);
-                    cbullets.hide();
-                    $(select).each(function(index) {
-                        $(this).delay(index*350).fadeIn(1000);
-                    });
-
-                    // smooth fade in for ibullets
-                    var select = '#'+currentSlideNo+ '.ibullets li';
-                    var cbullets = $(select);
-                    var cb_out = cbullets.length;
-                    log("cbullets "+cb_out+" current slide "+currentSlideNo);
-                    cbullets.hide();
-                    $(select).each(function(index) {
-                        $(this).delay(index*350).fadeIn(1000);
-                    });
-
-
-
-                };
-        
-                var nextSlide = function() {
-                    if (currentSlideNo < slides.length) {
-                        currentSlideNo++;
-                    }
-
-                    updateSlideClasses();
-                };
-        
-                var prevSlide = function() {
-                    if (currentSlideNo > 1) {
-                        currentSlideNo--;
-                    }
-                    updateSlideClasses();
-                };
-        
-                var showNotes = function() {
-                    var notes = document.querySelectorAll('.notes');
-                    for (var i = 0, len = notes.length; i < len; i++) {
-                        notes[i].style.display = (notesOn) ? 'none':'block';
-                    }
-                    notesOn = (notesOn) ? false:true;
-                };
-
-                var switch3D = function() {
-                    if (document.body.className.indexOf('three-d') == -1) {
-                        document.getElementsByClassName('presentation')[0].style.webkitPerspective = '1000px';
-                        document.body.className += ' three-d';
-                    } else {
-                        window.setTimeout("document.getElementsByClassName('presentation')[0].style.webkitPerspective = '0';", 2000);
-                        document.body.className = document.body.className.replace(/three-d/, '');
-                    }
-                };
-
-                var handleBodyKeyDown = function(event) {
-                    // console.log(event.keyCode);
-                    switch (event.keyCode) {
-                        case 37: // left arrow
-                            prevSlide();
-                            break;
-                        case 39: // right arrow
-                            // case 32: // space
-                            nextSlide();
-                            break;
-                        case 50: // 2
-                            showNotes();
-                            break;
-                        case 51: // 3
-                            switch3D();
-                            break;
-                    }
-                };
-
-                $('.slide').mousewheel(function(event, delta, deltaX, deltaY) {
-//                    var o = '';
-                    if (delta > 0) {
-//                        o = '#test2: up ('+delta+')';
-                        prevSlide();
-                    }
-                    else if (delta < 0) {
-//                        o = '#test2: down ('+delta+')';
-                        nextSlide();
-                    }
-//                    if( o != '' ) log( o );
-                });
-
-                var addTouchListeners = function() {
-                    document.addEventListener('touchstart', function(e) {
-                        touchStartX = e.touches[0].pageX;
-                    }, false);
-                    document.addEventListener('touchend', function(e) {
-                        var pixelsMoved = touchStartX - e.changedTouches[0].pageX;
-                        var SWIPE_SIZE = 150;
-                        if (pixelsMoved > SWIPE_SIZE) {
-                            nextSlide();
-                        }
-                        else if (pixelsMoved < -SWIPE_SIZE) {
-                            prevSlide();
-                        }
-                    }, false);
-                };
-
-                // initialize
-
-                (function() {
-                    if (window.location.hash != "") {
-                        currentSlideNo = Number(window.location.hash.replace('#slide', ''));
-                    } else {
-                        currentSlideNo = 1;
-                    }
-
-                    document.addEventListener('keydown', handleBodyKeyDown, false);
-                    /*          document.addEventListener('mousewheel',handleWheel, false);
-                      document.addEventListener('DOMMouseScroll',handleWheel, false);
-                      document.addEventListener('mousewheel',
-                          function(e) { handleWheel(e); }, false);
-                      document.addEventListener('DOMMouseScroll',
-                          function(e) { handleWheel(e); }, false); */
-
-
-                    var els = slides;
-                    for (var i = 0, el; el = els[i]; i++) {
-                        addClass(el, 'slide far-future');
-                    }
-                    updateSlideClasses();
-
-                    // add support for finger events (filter it by property detection?)
-                    addTouchListeners();
-                })();
-            })();
- 
-        </script>
-
-        <!--[if IE]>
-		<script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script> 
-		<script>CFInstall.check({ mode: "overlay" });</script> 
-        <![endif]-->
-    </body>
-</html> 
+	</body>
+</html>
