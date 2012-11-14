@@ -152,7 +152,8 @@ html {
 	display: inline-block;
 
 	text-align: left;
-	margin: 0 auto;
+
+   	margin: 5px 0 5px 20px;
 }
 
 #reveal ol {
@@ -163,6 +164,11 @@ html {
 #reveal ul {
 	list-style: disc;
 }
+
+#reveal ul ul {
+	list-style: circle;
+}
+
 
 #reveal p {
 	margin-bottom: 10px;
