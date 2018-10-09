@@ -23,13 +23,14 @@
   text-transform: uppercase;
   text-shadow: 0px 0px 6px rgba(0,0,0,0.2);
 }
-.reveal h1 { font-size: 72px;   }
-.reveal h2 { font-size: 58px; }
-.reveal h3 { font-size: 42px; }
-.reveal h4 { font-size: 36px; }
-.reveal pre { font-size: 14px; }
+.reveal h1    { font-size: 66px; }
+.reveal h2    { font-size: 52px; }
+.reveal h3    { font-size: 36px; }
+.reveal h4    { font-size: 30px; }
+.reveal p     { font-size: 30px; }
+.reveal pre   { font-size: 14px; }
 .reveal small { font-size: 24px; }
-.reveal li { font-size: 20px; }
+.reveal li    { font-size: 20px; }
 
 #ribbon {
   position: absolute; 
