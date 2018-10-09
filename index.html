@@ -2,7 +2,8 @@
 <html lang="en">
     
     <head>
-        <meta charset="utf-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         
         <title>Mark Essel's Resume</title>
         <link rel="stylesheet" type="text/css" href="css/main.css" media="screen, projection" />
@@ -21,14 +22,21 @@
 
         </script>
         
-        <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-        
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
 
-        <link rel="stylesheet" href="lib/zenburn.css">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-    </head>
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
     
     <body>
         
@@ -309,45 +317,22 @@
             
         </div>
         
-        <script src="js/reveal.js"></script>
-        <script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/coffee-script/1.8.0/coffee-script.min.js"></script>          
 
-        <!-- Optional libraries for code syntax highlighting and classList support in IE9 -->
-        <script src="lib/highlight.js"></script>
-        <script src="lib/classList.js"></script>
-        
-        <script>
-            // Parse the query string into a key/value object
-            var query = {};
-            location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
-                query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
-            } );
-
-            Reveal.initialize({
-                // Display controls in the bottom right corner
-                controls: true,
-
-                // Display a presentation progress bar
-                progress: true,
-
-                // If true; each slide will be pushed to the browser history
-                history: true,
-
-                // Flags if mouse wheel navigation should be enabled
-                mouseWheel: true,
-
-                // Apply a 3D roll to links on hover
-                rollingLinks: true,
-
-                // UI style
-                theme: query.theme || 'default', // default/neon
-
-                // Transition style
-                transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
-            });
-
-            hljs.initHighlightingOnLoad();
-        </script>
-
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+		
     </body>
 </html>
