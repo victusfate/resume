@@ -31,6 +31,7 @@
 .reveal pre   { font-size: 14px; }
 .reveal small { font-size: 24px; }
 .reveal li    { font-size: 20px; }
+.reveal section { top: 30px; }
 
 #ribbon {
   position: absolute; 
