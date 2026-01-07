@@ -18,6 +18,14 @@ npm start
 
 Then open `http://localhost:8000` in your browser.
 
+## GitHub Pages deployment
+
+This repo uses a GitHub Actions workflow (`.github/workflows/pages.yml`) to build a static `dist/` folder and deploy it to GitHub Pages.
+
+In GitHub repo settings, set:
+
+- **Settings → Pages → Source**: “GitHub Actions”
+
 ## Updating Reveal.js
 
 To update Reveal.js, bump the version in `package.json` and run:
@@ -30,6 +38,12 @@ If you ever need to re-sync the vendored Reveal assets:
 
 ```bash
 npm run sync
+```
+
+To build the deployable site locally:
+
+```bash
+npm run build
 ```
 
 ## Printing / PDF
