@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Mark Essel's Resume</title>
+		<title>Mark Essel’s Resume</title>
 
-		<meta name="description" content="An html resume">
+		<meta name="description" content="An HTML resume">
 		<meta name="author" content="victusfate">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -14,26 +14,12 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
-        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="vendor/reveal/dist/reveal.css">
+		<link rel="stylesheet" href="vendor/reveal/dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/style.css">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-		<script type="text/javascript">
-			function show(text, target) {
-				var out = $('#' + target);
-				out.fadeOut();
-				out.hide();
-				out.html(text);
-				out.fadeIn();
-			}
-			function log(msg) {
-				$('#logger').append('<p>'+msg+'</p>').scrollTop(999999);
-			};
-		</script>
+		<link rel="stylesheet" href="vendor/reveal/plugin/highlight/monokai.css">
 
 
 		<!-- Printing and PDF exports -->
@@ -58,9 +44,6 @@
 				<a href="https://github.com/victusfate/html5-resume">
 					<img src="images/forkme_right_red_aa0000.png" alt="Fork me on GitHub" data-canonical-src="images/forkme_right_red_aa0000.png">
 				</a>
-				<script>
-					$("#ribbon").fadeOut(4000);
-				</script>               
 			</div>
 
 			<!-- Any section element inside of this container is displayed as a slide -->
@@ -72,9 +55,9 @@
 					<br/>
 					<br/>
 					<br/>
-					<p><small>special thanks and format credit <a href="http://hakim.se/">Hakim El Hattab</a>/<a href="http://twitter.com/hakimel">@hakimel</a></small></p>
+					<p><small>Special thanks and format credit: <a href="http://hakim.se/">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small></p>
 					<script>
-							// Delicously hacky. Look away.
+							// Deliciously hacky. Look away.
 							if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) )
 							document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
 					</script>
@@ -82,29 +65,29 @@
 				
 				<section>
 					<header>
-						<h1>Tools I love to work with</h1>
+						<h1>Tools I Love to Work With</h1>
 					</header>
 					<div id="2" class="bullets">
 						<ul>
 							<li>Languages:
 								<ul>
-                  <li>python, php, javascript, nodejs, c++</li>
-									<li>swift/obj-c, ruby, Markup(html/css/md), php</li>
-									<li>sql (mysql/postgres), mongo queries, firebase queries</li>
+									<li>Python, PHP, JavaScript, Node.js, C++</li>
+									<li>Swift/Objective-C, Ruby, markup (HTML/CSS/Markdown)</li>
+									<li>SQL (MySQL/Postgres), MongoDB queries, Firebase queries</li>
 								</ul>
 							</li>
-							<li>Frameworks/Libs: Nodejs, jQuery, Cairo, GraphicsMagick, FFmpeg, GPUImage, opencl/gl, AVFoundation, CoreGraphics, OpenGLES </li>
-							<li>Deployment: Amazon EC2/Beanstalk/Lambda, Heroku, Google App Engine </li>
+							<li>Frameworks/Libs: Node.js, jQuery, Cairo, GraphicsMagick, FFmpeg, GPUImage, OpenCL/OpenGL, AVFoundation, Core Graphics, OpenGL ES</li>
+							<li>Deployment: AWS (EC2/Elastic Beanstalk/Lambda), Heroku, Google App Engine</li>
 							<li>Comfortably familiar:
 								<ul>
-									<li>tools: d3.js, Rails, Sinatra, Django </li>
+									<li>Tools: D3.js, Rails, Sinatra, Django</li>
 									<li>Databases/Queries: I can adapt to whatever a team is using</li>
 								</ul>
 							</li>
 							<li>Preferred Environments:
 									<ul class="polaroids">
-										<div class="front"><a href="http://www.apple.com/macosx/"><img class="small" src="images/mac_os_x.png" title="Mac OS X" />Mac OS X</a></div>
-										<div class="front"><a href="http://www.ubuntu.com/"><img class="small" src="images/ubuntu.jpeg" title="Ubuntu" />Ubuntu</a></div>
+										<li><div class="front"><a href="http://www.apple.com/macosx/"><img class="small" src="images/mac_os_x.png" title="macOS" />macOS</a></div></li>
+										<li><div class="front"><a href="http://www.ubuntu.com/"><img class="small" src="images/ubuntu.jpeg" title="Ubuntu" />Ubuntu</a></div></li>
 									</ul>
 							</li>
 
@@ -120,15 +103,15 @@
 					<section>
 						<div id="3" class="polaroid_box">
 							<ul class="polaroids">
-								<li><div class="front"><a href="https://welco.me/"><img src="images/welcome.png" title="Welcome"/>Tech Co-founder at Welcome</a></div></li>                                 
-								<li><div class="front"><a href="https://tekhorizons.com/"><img src="images/tekhorizons.png" title="TekHorizons"/>Founder at Tek Horizons</a></div></li>                                 
-								<li><div class="front"><a href="https://www.citizen.com/"><img src="images/citizen.png" title="Citizen"/>Technical Co-founder at Citizen</a></div></li>                                
-								<li><div class="front"><a href="https://www.prnewswire.com/news-releases/vimeo-acquires-video-creation-app-cameo-250778121.html"><img src="images/cameo.png" title="Cameo"/>R&amp;D at Cameo</a></div></li>                                
+								<li><div class="front"><a href="https://welco.me/"><img src="images/welcome.png" title="Welcome"/>Tech co-founder at Welcome</a></div></li>
+								<li><div class="front"><a href="https://tekhorizons.com/"><img src="images/tekhorizons.png" title="Tek Horizons"/>Founder at Tek Horizons</a></div></li>
+								<li><div class="front"><a href="https://www.citizen.com/"><img src="images/citizen.png" title="Citizen"/>Technical co-founder at Citizen</a></div></li>
+								<li><div class="front"><a href="https://www.prnewswire.com/news-releases/vimeo-acquires-video-creation-app-cameo-250778121.html"><img src="images/cameo.png" title="Cameo"/>R&amp;D at Cameo</a></div></li>
 							</ul>
 							<ul class="polaroids">
-								<li><div class="front"><a href="https://github.com/victusfate"><img src="images/github.png" title="victusfate github"/>github</a></div></li>
+								<li><div class="front"><a href="https://github.com/victusfate"><img src="images/github.png" title="victusfate GitHub"/>GitHub</a></div></li>
 								<li><div class="front"><a href="https://twitter.com/victusfate"><img src="images/twitter.png" title="Twitter profile" />Twitter</a></div></li>
-								<li><div class="front"><a href="http://victusfate.github.io/victusspiritus/"><img src="images/victus_spiritus.png" title="Victus Spiritus, my blog" />Victus Spiritus my blog</a></div></li>
+								<li><div class="front"><a href="http://victusfate.github.io/victusspiritus/"><img src="images/victus_spiritus.png" title="Victus Spiritus (blog)" />Victus Spiritus (blog)</a></div></li>
 								<li><div class="front"><a href="http://www.linkedin.com/in/markessel"><img src="images/linked_in.png" title="LinkedIn profile" />LinkedIn</a></div></li>
 							</ul>
 						</div>
@@ -142,14 +125,14 @@
 					<div id="4" class="bullets">
 					<ul>
             <li>Behavior tracking and prediction for optimal activities</li>
-            <li>Architected, implemented and deployed ML processing of user/item relationships both periodic and real time</li>
+            <li>Architected, implemented and deployed ML processing of user/item relationships (periodic + real-time)</li>
             <li>Implemented and deployed (open source) 3D video simulation backend from images</li>
-						<li>Architected, developed and deployed a distributed collection of real time services in Node.js</li>
-						<li>Designed, implemented and deployed a custom, scalable, distributed, replicated geo cache using Redis and Node.js</li>
+						<li>Architected, developed and deployed a distributed collection of real-time services in Node.js</li>
+						<li>Designed, implemented and deployed a custom, scalable, distributed, replicated geo-cache using Redis and Node.js</li>
 						<li>Designed, implemented and deployed video rendering engines</li>
-						<li>Multiple roles in full stack web development using Javascript (node.js), Ruby, Python, and C++</li>
+						<li>Multiple roles in full stack web development using JavaScript (Node.js), Ruby, Python, and C++</li>
 						<li>Signal Analysis/Processing - Linear (Least Squares) &amp; Non-Linear (parameterized)</li>
-						<li>Detection Algorithms, Infrared Image processing Temporal/Spectral Matched Filter</li>
+						<li>Detection algorithms, infrared image processing (temporal/spectral matched filtering)</li>
 						<li>Classic Machine Learning Algorithms: Quadratic Classifier, Convex Hull</li>
 						<li>Protein Structure Search Analysis</li>
 						<li>Modeling of Atmospheric Gases, and IR sensor images</li>
@@ -163,17 +146,19 @@
 						</header>
 						<section>
 							<br>
-							<h3>Tek Horizons, Sept 2017 - Present</h3>
+							<h3>Tek Horizons, Sep 2017 - Present</h3>
 							<p>Founder at Tek Horizons</p>
 							<div id="5c" class="bullets">
 								<ul>
-									<li>A consultancy founded on delivering professional backend developer services</li>
+									<li>A consultancy delivering professional backend development services</li>
 									<li>Fractional CTO/Technical Leadership</li>
-									<li>MVP Data fusion algorithm (voting)</li>
+									<li>Agentic system & mcp server</li>
+									<li>Search and product rank prediction systems</li>
+									<li>MVP Data fusion algorithm</li>
 									<li>Audio signal processing and deploying ML detection techniques</li>
-									<li>Lookahead traversal architecture for optimizing day planning with background build system + notifications</li>
-									<li>API, Socket Servers, Realtime Data</li>
-									<li>Custom applications: native and mobile web app backends, social data driven itinerary planning, optimal street routing, travel time matrix, real time geo spatial engines, video processing, custom apns/fcm push services</li>
+									<li>Lookahead traversal for optimizing trip planning</li>
+									<li>API, socket servers, real-time data</li>
+									<li>Custom applications: native and mobile web app backends, social data-driven itinerary planning, optimal street routing, travel time matrix, real-time geospatial engines, video processing, custom APNs/FCM push services</li>
 									<li>Documented, tested, and benchmarked deliverables</li>
 								</ul>
 							</div>
@@ -184,9 +169,9 @@
 							<p>ML/Backend Engineer at Dorsia</p>
 							<div id="5a" class="bullets">
 								<ul>
-									<li>Designed and Deployed 3D Secure Asynchronous Payment Processing System</li>
+									<li>Designed and deployed a 3D Secure asynchronous payment processing system</li>
 									<li>Reworked onboarding logic and flow to support temporary guest passes</li>
-                 					<li>Created weekly sanitized version of primary database</li>
+                 					<li>Created a weekly sanitized copy of the primary database</li>
 									<li>Generated reservation tracking system and UI to support frictionless connections</li>
 								</ul>
 							</div>
@@ -197,11 +182,11 @@
 							<p>Tech Co-founder at Welcome</p>
 							<div id="5b" class="bullets">
 								<ul>
-                  <li>ML Realtime collaborative filter architecture</li>
-									<li>ML Realtime and Interval model training and http prediction services</li>
+                  <li>ML real-time collaborative filtering architecture</li>
+									<li>ML real-time + batch model training and HTTP prediction services</li>
 									<li>ML Collaborative filter/Recommendation Engines</li>
-									<li>Backend work supporting our Data, API & CMS</li>
-									<li>Custom "Best Of" Scoring and Processing for Vetted</li>
+									<li>Backend work supporting our data, API, and CMS</li>
+									<li>Custom “best of” scoring and processing for Vetted</li>
                   <li>Image processing and video simulation service</li>
 								</ul>
 							</div>
@@ -214,12 +199,12 @@
 								<ul>
 									<li>Architect: all backend services</li>
 									<li>API (express), JWT auth, fully documented and covered by tests</li>
-									<li>Custom data store: redis cache backed, replicated local application. 3D lat,lon,time queries</li>
-									<li>Implemented and deployed live video streaming platform (nodejs &amp; service workers): variations using Wowza, Red5, and nginx-rtmp</li>
-									<li>Custom cross platform (iOS/Android) geo push architecture</li>
+									<li>Custom data store: Redis cache-backed, replicated local application. 3D lat/lon/time queries</li>
+									<li>Implemented and deployed a live video streaming platform (Node.js &amp; service workers): variations using Wowza, Red5, and nginx-rtmp</li>
+									<li>Custom cross-platform (iOS/Android) geo-push architecture</li>
 									<li>Live stream push workers</li>
-									<li>Video post processing workers</li>
-									<li>Deployment (Heroku + AWS) and management (loggly, custom + heroku alerts, node ping)</li>
+									<li>Video post-processing workers</li>
+									<li>Deployment (Heroku + AWS) and management (Loggly, custom + Heroku alerts, NodePing)</li>
 									<li>Testing, benchmarking, load testing</li>
 								</ul>
 							</div>
@@ -230,14 +215,14 @@
 							<p>Principal Developer: for Cameo product (Fast Society)</p>
 							<div id="5e" class="bullets">
 								<ul>
-									<li>Designed and implemented structured theme scripts, gl shader effects, and font styling for Cameo video rendering (swift/opengl)</li>
-									<li>Closely worked with AVComposition, slow motion video segments, audio mixing, and gl transform handling for arbitrary source video</li>
-									<li>Designed and developed background video uploader for Cameo mobile app (swift/objc) with data validation to Google Cloud Storage</li>
+									<li>Designed and implemented structured theme scripts, GL shader effects, and font styling for Cameo video rendering (Swift/OpenGL)</li>
+									<li>Worked closely with AVComposition, slow-motion video segments, audio mixing, and GL transform handling for arbitrary source video</li>
+									<li>Designed and developed a background video uploader for the Cameo mobile app (Swift/Objective-C) with data validation to Google Cloud Storage</li>
 									<li>Optimized locally exported video, tuning SDAVAssetExportSession and worked with server team for high quality streams</li>
-									<li>Troubleshooting issues across the Cameo mobile app (swift/fabric)</li>
-									<li>Crafted tools essential to our backend video processing architecture (c++11/libffmpeg)</li>
-									<li>Architected and implemented our video rendering engine c++11/opencl/opengl, visual effects in opencl/gl, and structured script engine (c++11)</li>
-									<li>Identify and resolve issues in our cloud infrastructure (node/c++) and dedicated hardware. Regular use of Kibana/Elastic Search/Syslog for debugging distributed processing</li>
+									<li>Troubleshot issues across the Cameo mobile app (Swift/Fabric)</li>
+									<li>Crafted tools essential to our backend video processing architecture (C++11/libffmpeg)</li>
+									<li>Architected and implemented our video rendering engine (C++11/OpenCL/OpenGL), visual effects in OpenCL/OpenGL, and a structured script engine (C++11)</li>
+									<li>Identified and resolved issues in our cloud infrastructure (Node/C++) and dedicated hardware. Regular use of Kibana/Elasticsearch/syslog for debugging distributed processing</li>
 								</ul>
 							</div>
 						</section>                    
@@ -250,9 +235,9 @@
 									<li>Build out backend video processing architecture (tools, dataflow, encoding)</li>
 									<li>Optimize video processing pipeline and instance utilization</li>
 									<li>Stability testing multiple components</li>
-									<li>Ported JavaScript animation library to C++ opengl rendering engine</li>
+									<li>Ported a JavaScript animation library to a C++ OpenGL rendering engine</li>
 									<li>Automated new visual animations/effects</li>
-									<li>Aid in configuring and deploying our cloud infrastructure (basics, build error/dependency, migrated from fabric to puppet)</li>
+									<li>Aided in configuring and deploying our cloud infrastructure (basics, build error/dependency, migrated from Fabric to Puppet)</li>
 									<li>Everything else our startup required</li>
 								</ul>
 							</div>
@@ -262,8 +247,8 @@
 							<p>Senior Staff Scientist core responsibilities: Algorithm and software development, implementation and testing.</p>
 							<div id="6" class="bullets">
 								<ul>
-									<li>Design of real time hyperspectral anomaly detection algorithms as well as temperature feature extraction for new LWIR sensor in C++ using Visual .NET and delivered to customer on Linux platform</li>
-									<li>Implemented real time PDB search tool to identify structures similar to specified structures (Kinase)</li>
+									<li>Design of real-time hyperspectral anomaly detection algorithms as well as temperature feature extraction for new LWIR sensor in C++ using Visual .NET; delivered to customer on Linux platform</li>
+									<li>Implemented a real-time PDB search tool to identify structures similar to specified structures (kinase)</li>
 									<li>Implemented and demonstrated Spectral Matched Filter (SMF) algorithm for target detection in a complex target/background scene</li>
 									<li>Implemented Atmospheric Correction algorithms in C++ and processed AVIRIS data</li>
 								</ul>
@@ -271,7 +256,7 @@
 						</section>
 						<section>
 							<h3>Photon Research Associates, Jan. 1996 - April 2012</h3>
-							<div id="7" class="bullets">
+							<div id="pra-2" class="bullets">
 								<ul>
 									<li>Developed algorithms for the IR Sensor Study - Algorithm Development Program that demonstrated advanced detection and identification techniques against measured CBD and CBE data sets</li>
 									<li>Participated in development of Cirrus cloud detection and characterization for HYMSMO program</li>
@@ -309,9 +294,9 @@
 							<h2>Publications</h2>
 							<ul>
 								<li>"Midcourse Clutter Mitigation Using Multi-Spectral, Subspace Projection Techniques", Julian Brody, Mark Essel, Brad Flanders, Henry Phan, Tony Sommese, MSS, January, 2003</li>
-								<li>"Atmospheric Correction Using Imbedded Models (ACUIM)", Tony Sommese and Mark Essel, SPIE, March, 2000</li>
+								<li>"Atmospheric Correction Using Embedded Models (ACUIM)", Tony Sommese and Mark Essel, SPIE, March, 2000</li>
 								<li>"Background Clutter Rejection Using Generalized Regression Neural Networks" , C. Ralph Waters, Tony Sommese, Mark Essel and Capt. Brian Hibbeln, IEEE, March, 2000</li>
-								<li>"Signal Subspace Processing Of 4D Remote Sensing Data", Ralph Waters, Tony Sommese, Mark Essel, Stephen Mack and Capt. Brian Hibbeln, IEEE, March, 1999</li>
+								<li>"Signal Subspace Processing of 4D Remote Sensing Data", Ralph Waters, Tony Sommese, Mark Essel, Stephen Mack and Capt. Brian Hibbeln, IEEE, March, 1999</li>
 								<li>"Super Resolution and Image Enhancement Using Novelty Concepts", C.Ralph Waters, Tony Sommese, Dave Weiss, Mark Essel &amp; Capt. Brian Hibbeln IEEE, March 1998</li>
 							</ul>
 						</section>  
@@ -323,14 +308,14 @@
 					</header>
 					<section>
 						<img style="position:absolute; top: 0; right:30px;" title="MichelleAndMeJustMarried" src="images/MichelleAndMeJustMarried.jpeg" alt="" width="200" height="150" />
-						<div id="7" class="bullets">
+						<div id="contact" class="bullets">
 							<ul>
 								<li>Mark Essel</li>
 								<li>8 Colony Rd</li>
 								<li>Port Jefferson Station, NY 11776</li>
 								<li>Phone: (631)403-0718</li>
-								<li>email: <a href="mailto:m@tekhorizons.com">m@tekhorizons.com</a> twitter: <a href="http://twitter.com/victusfate">@victusfate</a></li>
-								<li><a href="https://docs.google.com/document/d/1AUyky6j62CxZhqkWM-EdEOznGu4uXWmBTJE7yjOmLkU/edit?usp=sharing">Google doc</a> version of resume</li>
+								<li>Email: <a href="mailto:m@tekhorizons.com">m@tekhorizons.com</a> · Twitter: <a href="http://twitter.com/victusfate">@victusfate</a></li>
+								<li><a href="https://docs.google.com/document/d/1AUyky6j62CxZhqkWM-EdEOznGu4uXWmBTJE7yjOmLkU/edit?usp=sharing">Google Doc</a> version of resume</li>
 							</ul>
 						</div>
 					</section>
@@ -339,12 +324,17 @@
 
 		</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+		<script src="vendor/reveal/dist/reveal.js"></script>
+		<script src="vendor/reveal/plugin/markdown/marked.js"></script>
+		<script src="vendor/reveal/plugin/markdown/markdown.js"></script>
+		<script src="vendor/reveal/plugin/highlight/highlight.js"></script>
+		<script src="vendor/reveal/plugin/search/search.js"></script>
+		<script src="vendor/reveal/plugin/zoom/zoom.js"></script>
+		<script src="vendor/reveal/plugin/notes/notes.js"></script>
 
 		<script>
 
-			// More info https://github.com/hakimel/reveal.js#configuration
+			// Modern reveal.js (v4+): plugins are registered via the plugins array
 			Reveal.initialize({
 				controls: true,
 				progress: true,
@@ -353,16 +343,7 @@
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/search/search.js', async: true },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealSearch, RevealZoom, RevealNotes ]
 			});
 
 		</script>

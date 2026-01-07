@@ -35,16 +35,23 @@ module.exports = function(grunt) {
 		},
 
 		sass: {
+			options: {
+				// Use Dart Sass (no node-gyp / no Python 2 toolchain needed)
+				implementation: require('sass')
+			},
 			core: {
-				src: 'css/reveal.scss',
-				dest: 'css/reveal.css'
+				files: {
+					'css/reveal.css': 'css/reveal.scss'
+				}
 			},
 			themes: {
-				expand: true,
-				cwd: 'css/theme/source',
-				src: ['*.sass', '*.scss'],
-				dest: 'css/theme',
-				ext: '.css'
+				files: [{
+					expand: true,
+					cwd: 'css/theme/source',
+					src: ['*.sass', '*.scss'],
+					dest: 'css/theme',
+					ext: '.css'
+				}]
 			}
 		},
 

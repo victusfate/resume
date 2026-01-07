@@ -1,146 +1,237 @@
 
-/*@font-face {
-  font-family: 'Source Sans Pro';
-  src: url('../lib/font/source-sans-pro/source-sans-pro.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-*/
-@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+/* Resume-specific overrides for reveal.js */
 
-.reveal h1, 
-.reveal h2, 
-.reveal h3, 
+/* style.css lives in /css, so the correct path to /lib is ../lib (not ../../lib) */
+@import url(../lib/font/source-sans-pro/source-sans-pro.css);
+
+:root {
+  --bg0: #070a12;
+  --bg1: #0b1020;
+  --text: #e8edf7;
+  --muted: #b5c0d6;
+  --card: rgba(255, 255, 255, 0.06);
+  --card-strong: rgba(255, 255, 255, 0.10);
+  --border: rgba(255, 255, 255, 0.12);
+  --shadow: rgba(0, 0, 0, 0.45);
+  --accent: #6ee7ff;
+  --accent2: #a78bfa;
+}
+
+.reveal {
+  font-family: "Source Sans Pro", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+}
+
+.reveal .backgrounds {
+  background:
+    radial-gradient(1200px 800px at 15% 15%, rgba(110, 231, 255, 0.12), transparent 55%),
+    radial-gradient(900px 700px at 85% 25%, rgba(167, 139, 250, 0.10), transparent 55%),
+    linear-gradient(180deg, var(--bg1) 0%, var(--bg0) 100%);
+}
+
+/* Typography */
+.reveal h1,
+.reveal h2,
+.reveal h3,
 .reveal h4 {
-  margin: 0 0 20px 0;
-  
-  color: #eee;
-  
-  font-family: "Source Sans Pro", Helvetica, sans-serif;  
-  line-height: 0.9em;
-  letter-spacing: 0.02em;
-  
-  text-transform: uppercase;
-  text-shadow: 0px 0px 6px rgba(0,0,0,0.2);
+  margin: 0 0 18px 0;
+  color: var(--text);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  text-transform: none;
+  text-shadow: 0 10px 32px rgba(0, 0, 0, 0.35);
 }
-.reveal h1    { font-size: 66px; }
-.reveal h2    { font-size: 52px; }
-.reveal h3    { font-size: 36px; }
-.reveal h4    { font-size: 30px; }
-.reveal p     { font-size: 30px; }
-.reveal pre   { font-size: 14px; }
-.reveal small { font-size: 24px; }
-.reveal li    { font-size: 20px; }
-.reveal section { top: 30px; }
 
+.reveal h1 { font-size: 64px; }
+.reveal h2 { font-size: 46px; }
+.reveal h3 { font-size: 32px; font-weight: 650; }
+.reveal h4 { font-size: 26px; font-weight: 650; }
+
+.reveal p {
+  font-size: 26px;
+  line-height: 1.35;
+  color: var(--text);
+}
+
+.reveal small {
+  font-size: 18px;
+  color: var(--muted);
+}
+
+.reveal pre { font-size: 14px; }
+.reveal li {
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+/* Layout */
+.reveal .slides section {
+  top: 24px;
+}
+
+.reveal .slides section header {
+  margin-bottom: 10px;
+}
+
+.reveal .slides section .bullets {
+  padding: 20px 24px;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, var(--card-strong), var(--card));
+  border-radius: 18px;
+  box-shadow: 0 18px 45px var(--shadow);
+}
+
+.reveal ul, .reveal ol {
+  margin: 0.4em 0 0.6em 1.1em;
+}
+
+.reveal ul ul {
+  margin-top: 10px;
+}
+
+.reveal a {
+  color: var(--accent);
+  text-decoration-color: rgba(110, 231, 255, 0.45);
+  text-underline-offset: 0.18em;
+}
+
+.reveal a:hover {
+  color: #c7f7ff;
+  text-decoration-color: rgba(199, 247, 255, 0.9);
+}
+
+/* GitHub ribbon */
 #ribbon {
-  position: absolute; 
-  top: 0; 
-  right: 0; 
-  border: 0; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
   z-index: 2;
+  opacity: 0.9;
+  animation: ribbonFadeOut 800ms ease 3800ms forwards;
 }
 
-/* polaroids image stying from http://www.zurb.com/playground/css3-polaroids */
+@media (max-width: 720px) {
+  #ribbon { display: none; }
+}
 
-div#content h1, div#content h2, div#content h3, div#content h4, div#content h5, div#content h6, div#content p {
-  text-shadow: 0 1px 1px rgba(255,255,255,.5);
+@keyframes ribbonFadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(-6px);
+    pointer-events: none;
+  }
 }
-div#content h1, div#content h2, div#content h3, div#content h4, div#content h5, div#content h6 {
-  color: #62412e;
-}
+
+/* Modern "polaroids" => card grid */
 .polaroid_box {
-  margin:20px 0 0px 25px;
-  /*margin:0 0 0 0;*/
+  margin: 12px 0 0 0;
 }
 
-ul.polaroids {
-  width: 95%;
-  margin: 0px 0px 18px 0px;
-  float: left;
-  list-style: none;
-  padding: 20px;
+/* reveal.js themes apply strong defaults to ul elements; use higher specificity than `.reveal ul` */
+.reveal ul.polaroids {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 14px 0 18px 0 !important;
+
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
 }
+
 .polaroids li {
-  display: inline;
+  margin: 0;
+  padding: 0;
 }
+
 .polaroids a {
-  background: #fff;
-  display: inline;
-  float: left;
-  margin: 0 0 0px 20px;
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  min-width: 200px;
+  max-width: 320px;
   width: auto;
-  padding: 10px 10px 5px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.06));
+  border: 1px solid var(--border);
+  border-radius: 18px;
   text-align: center;
-  font-family: "Marker Felt", sans-serif;
   text-decoration: none;
-  color: #333;
-  font-size: 16px;
-  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-  -webkit-transform: rotate(-2deg);
-  -webkit-transition: -webkit-transform .15s linear;
-  -moz-transform: rotate(-2deg);
+  color: var(--text);
+  font-size: 18px;
+  box-shadow: 0 18px 45px var(--shadow);
+  transform: translateY(0);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
 }
+
+.polaroids a:hover {
+  transform: translateY(-4px);
+  border-color: rgba(110, 231, 255, 0.35);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+}
+
 .polaroids img {
   display: block;
-  height: 160px;
-  width: 160px;
-  margin-bottom: 12px;
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
 }
+
 .polaroids img.small {
-  height: 100px;
-  width: 100px;
+  width: 96px;
+  height: 96px;
 }
 
-
-
-.polaroids a:after {
-  content: attr(title);
+/* Tighten the main card grids (e.g. "My Digital Shadow") */
+.polaroid_box .polaroids {
+  gap: 12px;
+  margin: 12px 0 14px 0 !important;
 }
 
-.polaroids li:nth-child(even) a {
-  -webkit-transform: rotate(2deg);
-  -moz-transform: rotate(2deg);
-}
-.polaroids li:nth-child(3n) a {
-  -webkit-transform: none;
-  position: relative;
-  top: -5px;
-  -moz-transform: none;
-}
-.polaroids li:nth-child(5n) a {
-  -webkit-transform: rotate(5deg);
-  position: relative;
-  right: 5px;
-  -moz-transform: rotate(5deg);
-}
-.polaroids li:nth-child(8n) a {
-  position: relative;
-  right: 5px;
-  top: 8px;
-}
-.polaroids li:nth-child(11n) a {
-  position: relative;
-  left: -5px;
-  top: 3px;
+.polaroid_box .polaroids a {
+  min-width: 180px;
+  max-width: 260px;
+  padding: 12px 14px;
+  font-size: 16px;
+  gap: 8px;
 }
 
-.polaroids li a:hover,
-.polaroids .front a:hover {
-  -webkit-transform: scale(1.25);
-  -moz-transform: scale(1.25);
-  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
-  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
-  position: relative;
-  z-index: 5;
+.polaroid_box .polaroids img {
+  width: 108px;
+  height: 108px;
 }
 
-/*canvas {
-  position: absolute;
-  overflow: auto;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+/* Compact variant when polaroids are nested inside bullet lists (e.g. "Preferred Environments") */
+.reveal .bullets ul.polaroids {
+  justify-content: flex-start;
+  gap: 8px;
+  margin: 10px 0 0 0 !important;
 }
-*/
+
+.reveal .bullets ul.polaroids a {
+  min-width: 140px;
+  max-width: 190px;
+  padding: 8px 10px;
+  font-size: 15px;
+  gap: 6px;
+}
+
+.reveal .bullets ul.polaroids img.small {
+  width: 64px;
+  height: 64px;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .polaroids a { transition: none; }
+  .polaroids a:hover { transform: none; }
+}
+
+/* Print */
+@media print {
+  #ribbon { display: none !important; }
+}
