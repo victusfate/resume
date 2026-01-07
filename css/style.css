@@ -1,8 +1,7 @@
 
 /* Resume-specific overrides for reveal.js */
 
-/* style.css lives in /css, so the correct path to /lib is ../lib (not ../../lib) */
-@import url(../lib/font/source-sans-pro/source-sans-pro.css);
+/* Font is already provided by the Reveal theme CSS (vendor/reveal/dist/theme/*) */
 
 :root {
   --bg0: #070a12;
