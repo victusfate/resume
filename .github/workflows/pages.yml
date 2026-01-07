@@ -2,7 +2,8 @@ name: pages
 
 on:
   push:
-    branches: ["main"]
+    # This repo historically uses a single branch: gh-pages
+    branches: ["gh-pages"]
   workflow_dispatch: {}
 
 permissions:
