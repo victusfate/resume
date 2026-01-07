@@ -26,7 +26,7 @@ In GitHub repo settings, set:
 
 - **Settings → Pages → Source**: “GitHub Actions”
 
-Note: this workflow is configured to run on pushes to the `gh-pages` branch (this repo’s single branch).
+Note: this workflow is configured to run on pushes to the `gh-pages` branch (this repo’s single branch)
 
 ## Updating Reveal.js
 
