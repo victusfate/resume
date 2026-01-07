@@ -53,6 +53,10 @@ npm run build
 - Paper print styles: `css/print/paper.css`
 - PDF export styles: `css/print/pdf.css` (use `?print-pdf`)
 
+## Attribution
+
+See `ATTRIBUTION.md`.
+
 ```html
 <section data-markdown>
 	<script type="text/template">

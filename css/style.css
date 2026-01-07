@@ -30,9 +30,9 @@
 }
 
 /* Typography */
-.reveal h1,
-.reveal h2,
-.reveal h3,
+.reveal h1, 
+.reveal h2, 
+.reveal h3, 
 .reveal h4 {
   margin: 0 0 18px 0;
   color: var(--text);
@@ -103,10 +103,10 @@
 
 /* GitHub ribbon */
 #ribbon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: 0;
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  border: 0; 
   z-index: 2;
   opacity: 0.9;
   animation: ribbonFadeOut 800ms ease 3800ms forwards;

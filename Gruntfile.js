@@ -46,11 +46,11 @@ module.exports = function(grunt) {
 			},
 			themes: {
 				files: [{
-					expand: true,
-					cwd: 'css/theme/source',
-					src: ['*.sass', '*.scss'],
-					dest: 'css/theme',
-					ext: '.css'
+				expand: true,
+				cwd: 'css/theme/source',
+				src: ['*.sass', '*.scss'],
+				dest: 'css/theme',
+				ext: '.css'
 				}]
 			}
 		},
