@@ -338,6 +338,11 @@
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
+				// Disable Reveal's automatic "scroll view" on small screens.
+				// It can cause overlapping slides in some mobile browsers.
+				scrollActivationWidth: 0,
+				scrollActivationHeight: 0,
+
 				plugins: [ RevealMarkdown, RevealHighlight, RevealSearch, RevealZoom, RevealNotes ]
 			});
 
