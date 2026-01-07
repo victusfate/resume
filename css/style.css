@@ -186,6 +186,13 @@
   height: 96px;
 }
 
+/* OS icons are typically non-square (e.g. tall Tux SVG) — avoid cropping */
+.polaroids img.small {
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 6px;
+}
+
 /* Tighten the main card grids (e.g. "My Digital Shadow") */
 .polaroid_box .polaroids {
   gap: 12px;
@@ -223,6 +230,12 @@
 .reveal .bullets ul.polaroids img.small {
   width: 64px;
   height: 64px;
+}
+
+.reveal .bullets ul.polaroids img.small {
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 6px;
 }
 
 /* Reduce motion for accessibility */
